@@ -1,31 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Build for W-OS</title>
-<link rel="stylesheet" href="style.css">
+<title>Build for W-OS | W-OS Developers</title>
+<meta name="description" content="Your first W-OS app in Satisfaction.">
+<meta name="theme-color" content="#f8f8f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/dark_logo.png">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<header class="top"><div class="wrap">
-  <a class="brand" href="./">W-OS<span>Developers</span></a>
-  <nav class="links"><a href="docs.html" aria-current="page">Build</a><a href="submit.html">Publish</a><a href="mailto:support@willgraves.co.uk">Contact</a></nav>
-</div></header>
+<header class="top">
+  <a class="logo" href="/" aria-label="W-OS Developers home">
+    <img class="light" src="/assets/dark_logo.png" alt="William Graves Technology">
+    <img class="dark" src="/assets/light_logo.png" alt="">
+    <span class="tag">Developers</span>
+  </a>
+  <nav><a href="/docs.html" aria-current="page">Build</a><a href="/submit.html">Publish</a><a href="https://www.williamgravestechnology.com/products/">Store</a><a href="mailto:support@willgraves.co.uk">Contact</a></nav>
+</header>
+<main>
 
-<main class="wrap page">
+<div class="wrap page">
   <span class="eyebrow">Build</span>
-  <h1 style="font-size:clamp(34px,5vw,48px)">Your first app</h1>
+  <h1>Your first app.</h1>
   <p class="lead">Satisfaction apps are two small files. This is a complete, working counter.</p>
-
-  <div class="note"><b>Beta.</b> The Developer app and Satisfaction are part of W-OS's beta channel. Turn on <i>Beta updates</i> in Settings &rarr; Updates, then open <i>Beta features</i> &rarr; Developer.</div>
-
+  <div class="note"><b>Beta.</b> The Developer app and Satisfaction are part of the W-OS beta channel. Turn on <i>Beta updates</i> in Settings &rarr; Updates, then open <i>Beta features</i> &rarr; Developer.</div>
   <ol class="steps">
     <li><div><b>Create a project</b>Open the Developer app and choose a name. It makes <code>app.json</code>, <code>main.satif</code> and <code>main.satUI</code> for you.</div></li>
     <li><div><b>Write the logic</b>Variables, functions and a call to <code>render()</code> to redraw the screen.</div></li>
     <li><div><b>Describe the screen</b>A declarative view tree that is re-evaluated against your program's live state.</div></li>
     <li><div><b>Run, then install</b>Run shows it in a window. Install puts it in your own home folder, never touching the OS itself.</div></li>
   </ol>
-
 <pre><code>// main.satif
 var count = 0
 
@@ -38,7 +44,6 @@ func decrement() {
   count = count - 1
   render()
 }</code></pre>
-
 <pre><code>// main.satUI
 View {
   Text("Satisfaction Counter")
@@ -49,8 +54,7 @@ View {
   }
   Spacer
 }</code></pre>
-
-  <h2 style="margin-top:44px">The language in one table</h2>
+  <h2 class="sec">The language in one table</h2>
   <table>
     <tr><th>Thing</th><th>How it looks</th></tr>
     <tr><td>Values</td><td>numbers, strings, booleans, <code>nil</code>, lists <code>[1, 2]</code>, maps <code>["a": 1]</code>, functions</td></tr>
@@ -61,8 +65,22 @@ View {
     <tr><td>Errors</td><td>Always <code>Line N: what went wrong</code>, in plain English</td></tr>
   </table>
   <p style="color:var(--muted)">One screen file per app for now (<code>main.satUI</code>); extra logic files are supported.</p>
-</main>
+</div>
 
-<footer><div class="wrap">William Graves Corporation Ltd &middot; <a href="mailto:support@willgraves.co.uk">support@willgraves.co.uk</a></div></footer>
+</main>
+<footer>
+  <div class="fcols">
+    <div class="fcol"><h4>Developers</h4><a href="/docs.html">Build an app</a><a href="/submit.html">Publish on W-OS</a><a href="mailto:support@willgraves.co.uk">Developer support</a></div>
+    <div class="fcol"><h4>Products</h4><a href="https://www.williamgravestechnology.com/products/w-phone/">W-Phone</a><a href="https://www.williamgravestechnology.com/products/w-desk/">W-Desk</a></div>
+    <div class="fcol"><h4>Company</h4><a href="https://www.williamgravestechnology.com/about/">About</a><a href="https://www.williamgravestechnology.com/careers/">Careers</a><a href="https://www.williamgravestechnology.com/press/">Press</a></div>
+    <div class="fcol"><h4>Support</h4><a href="https://www.williamgravestechnology.com/support/">Help Center</a><a href="https://www.williamgravestechnology.com/legal/warranties/">Warranty</a><a href="https://www.williamgravestechnology.com/support/contact/">Contact</a></div>
+    <div class="fcol"><h4>Legal</h4><a href="https://www.williamgravestechnology.com/legal/">Legal Hub</a><a href="https://www.williamgravestechnology.com/legal/terms/tos.html">Terms of Use</a><a href="https://www.williamgravestechnology.com/legal/privacy/">Privacy Policy</a><a href="https://www.williamgravestechnology.com/legal/cookies/">Cookies</a></div>
+    <div class="fcol"><h4>Follow Us</h4><a href="https://www.instagram.com/williamgravestechnology">Instagram</a><a href="https://bsky.app/profile/williamgravestechnology.com">Bluesky</a><a href="https://www.linkedin.com/company/william-graves-technology">LinkedIn</a></div>
+  </div>
+  <div class="fbottom">
+    <picture><source srcset="/assets/light_logo.png" media="(prefers-color-scheme: dark)"><img src="/assets/dark_logo.png" alt="William Graves Technology"></picture>
+    <p>&copy; 2026 William Graves Technology. All rights reserved. William Graves Technology is a trademark of William Graves Corporation Ltd, of which it is a subsidiary. All trademarks and registered trademarks are the property of their respective owners.</p>
+  </div>
+</footer>
 </body>
 </html>

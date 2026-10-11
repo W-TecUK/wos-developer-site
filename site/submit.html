@@ -1,30 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Publish on W-OS</title>
-<link rel="stylesheet" href="style.css">
+<title>Publish on W-OS | W-OS Developers</title>
+<meta name="description" content="How apps get into the W-OS App Store.">
+<meta name="theme-color" content="#f8f8f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/dark_logo.png">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<header class="top"><div class="wrap">
-  <a class="brand" href="./">W-OS<span>Developers</span></a>
-  <nav class="links"><a href="docs.html">Build</a><a href="submit.html" aria-current="page">Publish</a><a href="mailto:support@willgraves.co.uk">Contact</a></nav>
-</div></header>
+<header class="top">
+  <a class="logo" href="/" aria-label="W-OS Developers home">
+    <img class="light" src="/assets/dark_logo.png" alt="William Graves Technology">
+    <img class="dark" src="/assets/light_logo.png" alt="">
+    <span class="tag">Developers</span>
+  </a>
+  <nav><a href="/docs.html">Build</a><a href="/submit.html" aria-current="page">Publish</a><a href="https://www.williamgravestechnology.com/products/">Store</a><a href="mailto:support@willgraves.co.uk">Contact</a></nav>
+</header>
+<main>
 
-<main class="wrap page">
+<div class="wrap page">
   <span class="eyebrow">Publish</span>
-  <h1 style="font-size:clamp(34px,5vw,48px)">How apps get into the store</h1>
-  <p class="lead">Like Apple's App Store, the W-OS App Store is curated. The W-OS team approves every app and every update, and can withdraw an app at any time.</p>
-
+  <h1>How apps get into the store.</h1>
+  <p class="lead">Like Apple's App Store, the W-OS App Store is curated. Our team approves every app and every update, and can withdraw an app at any time.</p>
   <ol class="steps">
-    <li><div><b>Send us your app</b>Email the details below to <a href="mailto:support@willgraves.co.uk?subject=App%20submission">support@willgraves.co.uk</a>. A submission form is coming; email is the process for now.</div></li>
+    <li><div><b>Send us your app</b>Email the details below to <a href="mailto:support@willgraves.co.uk?subject=App%20submission" style="text-decoration:underline">support@willgraves.co.uk</a>. A submission form is coming; email is the process for now.</div></li>
     <li><div><b>We review it</b>We check it works on W-OS, does what its description says, and is safe for people to install.</div></li>
     <li><div><b>We list it</b>Approved apps are added to the W-OS signed store list. Devices only trust that list, so nothing else can appear in the store.</div></li>
     <li><div><b>Updates go the same way</b>Send a new version and we review and publish it. We can also withdraw an app if a problem is found.</div></li>
   </ol>
-
-  <h2 style="margin-top:44px">What to send</h2>
+  <h2 class="sec">What to send</h2>
   <table>
     <tr><th>Detail</th><th>Why we need it</th></tr>
     <tr><td>App name, your name or company, short description</td><td>Shown in the store listing</td></tr>
@@ -34,17 +41,30 @@
     <tr><td>Privacy: what data it collects, if any</td><td>We will not list apps that hide this</td></tr>
     <tr><td>Contact for problems</td><td>So we can reach you if an update is needed</td></tr>
   </table>
-
-  <h2 style="margin-top:44px">What we won't list</h2>
-  <ul style="color:var(--ink-2)">
+  <h2 class="sec">What we won't list</h2>
+  <ul class="plain">
     <li>Apps that collect data without saying so</li>
     <li>Apps that ask for more access than they need, or try to reach outside their own folders</li>
     <li>Apps that copy another app's name or branding</li>
     <li>Web apps that are not served over <code>https://</code></li>
   </ul>
   <div class="note">Review times, fees and revenue terms have not been set yet. We will publish them here before opening submissions widely.</div>
-</main>
+</div>
 
-<footer><div class="wrap">William Graves Corporation Ltd &middot; <a href="mailto:support@willgraves.co.uk">support@willgraves.co.uk</a></div></footer>
+</main>
+<footer>
+  <div class="fcols">
+    <div class="fcol"><h4>Developers</h4><a href="/docs.html">Build an app</a><a href="/submit.html">Publish on W-OS</a><a href="mailto:support@willgraves.co.uk">Developer support</a></div>
+    <div class="fcol"><h4>Products</h4><a href="https://www.williamgravestechnology.com/products/w-phone/">W-Phone</a><a href="https://www.williamgravestechnology.com/products/w-desk/">W-Desk</a></div>
+    <div class="fcol"><h4>Company</h4><a href="https://www.williamgravestechnology.com/about/">About</a><a href="https://www.williamgravestechnology.com/careers/">Careers</a><a href="https://www.williamgravestechnology.com/press/">Press</a></div>
+    <div class="fcol"><h4>Support</h4><a href="https://www.williamgravestechnology.com/support/">Help Center</a><a href="https://www.williamgravestechnology.com/legal/warranties/">Warranty</a><a href="https://www.williamgravestechnology.com/support/contact/">Contact</a></div>
+    <div class="fcol"><h4>Legal</h4><a href="https://www.williamgravestechnology.com/legal/">Legal Hub</a><a href="https://www.williamgravestechnology.com/legal/terms/tos.html">Terms of Use</a><a href="https://www.williamgravestechnology.com/legal/privacy/">Privacy Policy</a><a href="https://www.williamgravestechnology.com/legal/cookies/">Cookies</a></div>
+    <div class="fcol"><h4>Follow Us</h4><a href="https://www.instagram.com/williamgravestechnology">Instagram</a><a href="https://bsky.app/profile/williamgravestechnology.com">Bluesky</a><a href="https://www.linkedin.com/company/william-graves-technology">LinkedIn</a></div>
+  </div>
+  <div class="fbottom">
+    <picture><source srcset="/assets/light_logo.png" media="(prefers-color-scheme: dark)"><img src="/assets/dark_logo.png" alt="William Graves Technology"></picture>
+    <p>&copy; 2026 William Graves Technology. All rights reserved. William Graves Technology is a trademark of William Graves Corporation Ltd, of which it is a subsidiary. All trademarks and registered trademarks are the property of their respective owners.</p>
+  </div>
+</footer>
 </body>
 </html>
